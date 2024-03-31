@@ -28,8 +28,9 @@ function genRepo(user) {
                 }
                 else {
                     for (i = 0; i < request.length; i++) {
+                        console.dir(request[i].homepage);
                         // variables from api request
-                        var repo_url = (request[i].homepage!='') ? request[i].homepage : request[i].html_url;
+                        var repo_url = (request[i].homepage) ? request[i].homepage : request[i].html_url;
                         var username = request[i].owner.login;
                         var repo_name = request[i].name;
                         var repo_description = request[i].description;
