@@ -6,8 +6,7 @@
 
 // To use a form instead of a specific user comment out the following 2 lines of code:
 
-var user = document.domain.split('.', 1); // alternatively, manually enter a different user than yourself using var user = 'alternate_username';
-window.onload = genRepo(user);
+window.onload = genRepo('CodericBusiness');
 
 
 function genRepo(user) {
