@@ -1,1 +1,47 @@
 
+<!--
+ -------------------------------------------
+   Author: Seyon Rajagopal
+   Copyright (c) 2020 Seyon Rajagopal
+ ------------------------------------------- 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- UIkit used for styling and icons -->
+    <link rel="stylesheet" href="/css/uikit.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/uikit.min.js"></script>
+    <script src="/js/uikit-icons.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <title>Coderic Business </title>
+</head>
+
+<body>
+   
+
+    <div id="repo-box"></div>
+
+
+    <script>
+            document.getElementById("back").style.display = "none";
+            function getusername() {
+                var user = document.getElementById("user").value;
+                document.getElementById("title").style.display = "none";
+                document.getElementById("repo-box").style.display = "block";
+                document.getElementById("back").style.display = "block";
+                genRepo(user);
+            }
+        </script>
+</body>
+
+</html>
+
+</html>
